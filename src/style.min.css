@@ -1,0 +1,202 @@
+/* Fonts: Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+/* Font, weight and sizes-------------------------------------------*/
+/* Border radius ------------------------------------------*/
+/* Colors --------------------------------------------------*/
+/* Others --------------------------------------------------*/
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a {
+  color: #FF7373;
+  text-decoration: none;
+}
+a:hover {
+  color: #FF7373;
+  text-decoration: underline;
+}
+
+.border {
+  border: 1px solid red !important;
+}
+
+/* Buttons -------------------------------------------------------*/
+.__button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Button pink */
+.button-pink {
+  background-color: #FF7373;
+  height: 60px;
+  width: 188px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.15s ease-in-out;
+}
+.button-pink:hover {
+  background-color: #222529;
+}
+.button-pink .button-text {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+.button-pink .corner-top-left {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+}
+.button-pink .corner-bottom-right {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* Button black */
+.button-black {
+  background-color: #222529;
+  color: #fff;
+  height: 60px;
+  width: 188px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-black:hover {
+  background-color: #FF7373;
+}
+.button-black .corner-top-left {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+}
+.button-black .corner-bottom-right {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid var(--color-white);
+}
+
+/* Button white */
+.button-white {
+  background-color: var(--color-white);
+  height: 60px;
+  width: 188px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-white .button-text {
+  font-weight: var(--font-weight-semiBold);
+  font-size: var(--font-size-16);
+  color: var(--font-dark-color);
+}
+.button-white .corner-top-left {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-left: 2px solid var(--font-dark-color);
+  border-top: 2px solid var(--font-dark-color);
+}
+.button-white .corner-bottom-right {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-right: 2px solid var(--font-dark-color);
+  border-bottom: 2px solid var(--font-dark-color);
+}
+
+.mainMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.mainMenu .logo {
+  font-size: 2.188rem;
+  font-weight: 700;
+}
+.mainMenu .logo:hover {
+  color: #FF7373;
+  text-decoration: underline;
+}
+.mainMenu .menuLinks {
+  font-weight: 500;
+}
+.mainMenu .menuLinks .menuLink {
+  color: #222529;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 1.25rem;
+  transition: 0.15s ease-in-out;
+  text-decoration: none;
+}
+.mainMenu .menuLinks .menuLink:hover {
+  color: #FF7373;
+  text-decoration: underline;
+}
+.mainMenu .menuLinks .active {
+  color: #FF7373;
+  text-decoration: none;
+}
+.mainMenu .menuIcons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mainMenu .menuIcons .menuIcon {
+  background-color: #fff;
+  color: black;
+  width: 36px;
+  height: 36px;
+  margin-left: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: 0.15s ease-in-out;
+}
+.mainMenu .menuIcons .menuIcon:hover {
+  color: #fff;
+  background-color: #FF7373;
+  text-decoration: none;
+  box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.06);
+}
+.mainMenu .menuIcons .active {
+  color: #fff;
+  background-color: #222529;
+  text-decoration: none;
+  box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.06);
+}
