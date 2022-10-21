@@ -5,10 +5,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
 
+
     .logo {
         font-size: $font-size-35;
         font-weight: $font-weight-bold;
-
+        color: $color-dark;
+        text-decoration: none;
 
         &:hover {
             color: $color-theme;

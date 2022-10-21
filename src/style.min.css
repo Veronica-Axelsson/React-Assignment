@@ -145,6 +145,8 @@ a:hover {
 .mainMenu .logo {
   font-size: 2.188rem;
   font-weight: 700;
+  color: #222529;
+  text-decoration: none;
 }
 .mainMenu .logo:hover {
   color: #FF7373;
@@ -199,4 +201,29 @@ a:hover {
   background-color: #222529;
   text-decoration: none;
   box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.06);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 25px;
+}
+footer .socialmedia {
+  margin-bottom: 25px;
+  color: black;
+}
+footer .socialmedia a {
+  font-size: 20px;
+  color: #222529;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all 0.15s ease-in-out;
+}
+footer .socialmedia a:hover {
+  color: #FF7373;
+  text-decoration: none;
 }

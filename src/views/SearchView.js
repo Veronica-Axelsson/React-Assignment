@@ -2,7 +2,7 @@ import React from 'react'
 import MainMenuSection from '../sections/MainMenuSection'
 import FooterSection from '../sections/FooterSection'
 
-const HomeView = () => {
+const Search = () => {
   return (
     <>
       <MainMenuSection/>
@@ -11,4 +11,4 @@ const HomeView = () => {
   )
 }
 
-export default HomeView
+export default Search
