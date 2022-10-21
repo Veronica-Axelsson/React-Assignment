@@ -21,6 +21,13 @@ a {
     border: 1px solid red !important;
 }
 
+
+@media (min-width:1600px) {
+    .container {
+        max-width: $max-width;
+    }
+}
+
 /* Buttons -------------------------------------------------------*/
 .__button {
     display: flex;

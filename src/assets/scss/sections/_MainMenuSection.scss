@@ -1,12 +1,13 @@
 .mainMenu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo menuIcons"
+                         "menuLinks menuLinks";
 
     .logo {
+        grid-area: logo;
         font-size: $font-size-35;
         font-weight: $font-weight-bold;
         color: $color-dark;
@@ -19,16 +20,17 @@
     }
 
     .menuLinks {
-        font-weight: $font-weight-medium;
+        grid-area: menuLinks;
+        display: grid;
+        overflow: hidden;
+        font-weight: 400;
+        height: 100%;
 
         .menuLink {
             color: $color-dark;
             font-weight: $font-weight-medium;
             text-decoration: none;
-            margin: 0 1.25rem;
-            transition: 0.15s ease-in-out;
-            text-decoration: none;
-
+            margin: 15px 15px;
 
             &:hover {
                 color: $color-theme;
@@ -40,10 +42,10 @@
             color: $color-theme;
             text-decoration: none;
         }
-
     }
 
     .menuIcons {
+        grid-area: menuIcons;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -66,17 +68,37 @@
                 color: $color-white;
                 background-color: $color-theme;
                 text-decoration: none;
-                box-shadow: 0 0 12px 5px $color-shadow;
+                box-shadow: 0 0 6px 4px $color-shadow;
+
             }
         }
-        
+
         .active {
             color: $color-white;
             background-color: $color-dark;
             text-decoration: none;
-            box-shadow: 0 0 12px 5px $color-shadow;
+            box-shadow: 0 0 6px 4px $color-shadow;
         }
     }
-   
+}
 
+@media (min-width: 992px) {
+    .mainMenu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo menuLinks menuLinks menuIcons";
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .menuLinks {
+            grid-area: menuLinks;
+            font-weight: $font-weight-medium;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
 }
