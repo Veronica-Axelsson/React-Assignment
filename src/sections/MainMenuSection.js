@@ -15,10 +15,10 @@ const MainMenuSection = () => {
             <NavLink className="menuLink" to="/contacts" end>Contacts</NavLink>
         </div>
         <div className="menuIcons">
-            <MenuIcon className="menuIcon" link="/search" icon="fa-regular fa-magnifying-glass" />
-            <MenuIcon className="menuIcon" link="/compare" icon="fa-regular fa-repeat" />
-            <MenuIcon className="menuIcon" link="/wishlist" icon="fa-regular fa-heart" />
-            <MenuIcon className="menuIcon" link="/shoppingcart" icon="fa-regular fa-bag-shopping" />
+            <MenuIcon link="/search" icon="fa-regular fa-magnifying-glass" />
+            <MenuIcon link="/compare" icon="fa-regular fa-code-compare" />
+            <MenuIcon quantity="3" link="/wishlist" icon="fa-regular fa-heart" />
+            <MenuIcon quantity="4" link="/shoppingcart" icon="fa-regular fa-bag-shopping" />
         </div>
     </nav>
   )

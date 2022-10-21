@@ -1,4 +1,23 @@
- /* Font, weight and sizes-------------------------------------------*/
+/* Colors --------------------------------------------------*/
+$color-theme: #FF7373;  
+$color-white: #fff;
+$color-extralightgray: #f8f8f8;
+$color-lightgray: #70707066;
+$color-gray: #BBBBBB;
+$color-darkgray: #616365;
+$color-dark: #222529; //Font color
+
+$color-shadow: rgba(0, 0, 0, 0.06);
+
+$linear-gradient-dark: #E6E6E6;
+$linear-gradient-light: #F5F5F5;
+
+// $black-color: #000;
+// $color-blackLight: #23262a;
+// $color-product-hover: #CDCED0;
+// $color-greyMedium: #bebebe;
+
+/* Font, weight and sizes-------------------------------------------*/
     $font-family: 'Poppins', sans-serif;
 
     $font-weight-regular: 400;
@@ -19,26 +38,6 @@
 
 /* Border radius ------------------------------------------*/
     $border-radius-rounded: 50%;
-
-/* Colors --------------------------------------------------*/
-    $color-theme: #FF7373;  
-    $color-white: #fff;
-    $color-extralightgray: #f8f8f8;
-    $color-lightgray: #70707066;
-    $color-gray: #BBBBBB;
-    $color-darkgray: #616365;
-    $color-dark: #222529; //Font color
-
-    $color-shadow: rgba(0, 0, 0, 0.06);
-
-    $linear-gradient-dark: #E6E6E6;
-    $linear-gradient-light: #F5F5F5;
-
-    // $black-color: #000;
-    // $color-blackLight: #23262a;
-    // $color-product-hover: #CDCED0;
-    // $color-greyMedium: #bebebe;
-   
 
 /* Others --------------------------------------------------*/
     $max-width: 1680px;

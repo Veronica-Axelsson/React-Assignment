@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 
     .logo {
@@ -50,7 +50,7 @@
 
         .menuIcon {
             background-color: $color-white;
-            color: black;
+            color: $color-dark;
             width: 36px;
             height: 36px;
             margin-left: 20px;

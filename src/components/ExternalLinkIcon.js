@@ -1,9 +1,9 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 
 const ExternalLinkIcon = ({link, icon}) => {
   return (
-    <a href={link} target="_blank"> 
+    <a href={link} target="blank"> 
         <i className={icon}></i>
     </a>
   )

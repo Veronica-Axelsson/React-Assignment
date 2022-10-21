@@ -1,10 +1,18 @@
 /* Fonts: Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 /* font-family: 'Poppins', sans-serif; */
+/* Colors --------------------------------------------------*/
 /* Font, weight and sizes-------------------------------------------*/
 /* Border radius ------------------------------------------*/
-/* Colors --------------------------------------------------*/
 /* Others --------------------------------------------------*/
+.bg-theme {
+  background-color: #FF7373;
+}
+
+.bg-dark {
+  background-color: #222529 !important;
+}
+
 html, body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -139,8 +147,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .mainMenu .logo {
   font-size: 2.188rem;
@@ -178,7 +186,7 @@ a:hover {
 }
 .mainMenu .menuIcons .menuIcon {
   background-color: #fff;
-  color: black;
+  color: #222529;
   width: 36px;
   height: 36px;
   margin-left: 20px;
