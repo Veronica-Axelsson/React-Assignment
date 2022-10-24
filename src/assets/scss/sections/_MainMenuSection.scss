@@ -13,15 +13,15 @@
         color: $color-dark;
         text-decoration: none;
 
-        &:hover {
-            color: $color-theme;
-            text-decoration: underline;
-        }
+        // &:hover {
+        //     color: $color-theme;
+        //     text-decoration: underline;
+        // }
     }
 
     .menuLinks {
         grid-area: menuLinks;
-        display: grid;
+        display: none;
         overflow: hidden;
         font-weight: 400;
         height: 100%;
@@ -78,6 +78,14 @@
             background-color: $color-dark;
             text-decoration: none;
             box-shadow: 0 0 6px 4px $color-shadow;
+            
+        }
+
+        .btn-menuIcon {
+            color: $color-white;
+            background-color: $color-dark;
+            transition: 0.15s ease-in-out;
+            border: none;
         }
     }
 }

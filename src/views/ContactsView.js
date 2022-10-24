@@ -6,8 +6,8 @@ const ContactsView = () => {
   return (
     <>
       <MainMenuSection/>
-      <FooterSection/>
       <h1>Contact</h1>
+      <FooterSection/>
     </>
   )
 }
