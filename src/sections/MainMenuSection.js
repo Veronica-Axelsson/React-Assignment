@@ -17,7 +17,7 @@ const MainMenuSection = () => {
         <div className={`menuLinks ${showMenu ? "d-grid": ""}`}>
             <NavLink className="menuLink" to="/" end>Home</NavLink>
             <NavLink className="menuLink" to="/categories" end>Categories</NavLink>
-            <NavLink className="menuLink" to="/products" end>Products</NavLink>
+            <NavLink className="menuLink" to="/products" >Products</NavLink>
             <NavLink className="menuLink" to="/contacts" end>Contacts</NavLink>
         </div>
         <div className="menuIcons">

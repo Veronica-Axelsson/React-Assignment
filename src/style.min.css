@@ -39,16 +39,12 @@ a:hover {
 }
 .btn-theme {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   text-align: center;
   background-color: #FF7373;
   color: #fff;
+  padding: 20px 50px;
   transition: all 0.15s ease-in-out;
-  height: 50px;
-  bottom: 0;
 }
 .btn-theme .corner-left {
   position: absolute;
@@ -174,33 +170,36 @@ a:hover {
   display: block;
   text-align: center;
 }
-.product-grid .container h1 {
+.product-grid h1 {
   font-size: 20px;
   font-weight: 700;
   color: #222529;
   margin-bottom: 30px;
 }
-.product-grid .container .card {
+.product-grid .card {
   border: none;
   margin-left: auto;
   margin-right: auto;
   width: 255px;
 }
-.product-grid .container .card .card-img {
+.product-grid .card .card-img {
   display: grid;
   background-color: #F5F5F5;
   position: relative;
 }
-.product-grid .container .card .card-img .img {
+.product-grid .card .card-img img {
   width: 100%;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.product-grid .container .card .card-img .card-menu {
+.product-grid .card .card-img .card-menu {
   position: absolute;
   top: 10px;
   right: 10px;
   display: block;
 }
-.product-grid .container .card .card-img .card-menu .menu-link {
+.product-grid .card .card-img .card-menu .menu-link {
   background-color: #fff;
   color: #222529;
   width: 36px;
@@ -214,37 +213,46 @@ a:hover {
   position: relative;
   border: none;
 }
-.product-grid .container .card .card-img .card-menu .menu-link:hover {
+.product-grid .card .card-img .card-menu .menu-link:hover {
   color: #fff;
   background-color: #222529;
   text-decoration: none;
 }
-.product-grid .container .card .card-img .card-menu:hover .card.menu {
-  display: block;
-}
-.product-grid .container .card .card-img .card-menu:hover .btn-card-theme {
+.product-grid .card .card-img .btn-card-theme {
+  position: absolute;
+  bottom: 0;
   display: flex;
-  color: #fff;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 50px;
 }
-.product-grid .container .card .card-body {
+.product-grid .card .card-body {
   text-align: center;
 }
-.product-grid .container .card .card-body .card-category {
+.product-grid .card .card-body .card-category {
   font-size: 13px;
   font-weight: 500;
   color: #616365;
 }
-.product-grid .container .card .card-body .card-title {
+.product-grid .card .card-body .card-title {
   font-size: 1rem;
   font-weight: 600;
 }
-.product-grid .container .card .card-body .card-rating {
+.product-grid .card .card-body .card-rating {
   color: #FF7373;
 }
-.product-grid .container .card .card-body .card-price {
+.product-grid .card .card-body .card-price {
   font-size: 1.125rem;
   font-weight: 600;
+}
+.product-grid .card:hover .card.menu {
+  display: flex !important;
+}
+.product-grid .card:hover .btn-card-theme {
+  display: flex !important;
+  color: #fff;
+  justify-content: center;
 }
 
 @media (min-width: 1200px) {

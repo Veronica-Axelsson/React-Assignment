@@ -1,8 +1,10 @@
 import './style.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import HomeView from './views/HomeView';
 import CategoriesView from './views/CategoriesView';
 import ProductsView from './views/ProductsView';
+import ProductDetailsView from './views/ProductDetailsView';
 import ContactsView from './views/ContactsView';
 import SearchView from './views/SearchView';
 import CompareView from './views/CompareView';
@@ -18,6 +20,9 @@ function App() {
           <Route path="/" element={<HomeView/>}/>
           <Route path="/Categories" element={<CategoriesView/>}/>
           <Route path="/Products" element={<ProductsView/>}/>
+
+          <Route path="/Products/:name" element={<ProductDetailsView/>}/>
+
           <Route path="/contacts" element={<ContactsView/>}/>
           <Route path="/Search" element={<SearchView/>}/>
           <Route path="/compare" element={<CompareView/>}/>

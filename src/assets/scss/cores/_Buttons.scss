@@ -1,20 +1,17 @@
 .btn-theme {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     text-align: center;
     background-color: $color-theme;
     color: $color-white;
-    // padding: 20px 50px;
+    padding: 20px 50px;
     transition: all 0.15s ease-in-out;
 
-    height: 50px;
-
-    bottom: 0;
-
-
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // height: 50px;
+    // bottom: 0;
 
     .corner-left {
         position: absolute;
