@@ -4,7 +4,6 @@
 
 // Cores
 @import "./cores/Variables";
-@import "./cores/Colors";
 @import "./cores/Base";
 @import "./cores/Buttons";
 
@@ -13,6 +12,10 @@
 @import "./sections/MainMenuSection"; 
 @import "./sections/ProductGridSection"; 
 @import "./sections//FooterSection";
+@import "./views/ContactViews";
+@import "./views/ContactViews";
+@import "./components/Breadcrumbs";
+@import "./sections/MapSection";
 
 //@Media
 // @import "./cores/@media\(min-width\)1600px";

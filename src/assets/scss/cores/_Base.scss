@@ -21,6 +21,14 @@ a {
     border: 1px solid red !important;
 }
 
+.bg-theme {
+    background-color: $color-theme;
+}
+
+.bg-dark {
+    background-color: $color-dark !important;
+}
+
 
 @media (min-width:1600px) {
     .container {

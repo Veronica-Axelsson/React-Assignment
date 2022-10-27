@@ -1,5 +1,5 @@
 .btn-theme {
-    position: absolute;
+    position: relative;
     width: 100%;
     text-align: center;
     background-color: $color-theme;
@@ -33,7 +33,7 @@
         border-bottom: 1px solid $color-white;
     }
 
-    &:hover {
+    .btn-theme:hover {
         color: $color-white !important;
         background-color: $color-dark;
         text-decoration: none;

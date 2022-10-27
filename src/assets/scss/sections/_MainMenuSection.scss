@@ -13,10 +13,10 @@
         color: $color-dark;
         text-decoration: none;
 
-        // &:hover {
-        //     color: $color-theme;
-        //     text-decoration: underline;
-        // }
+        &:hover {
+            color: $color-dark;
+            text-decoration: none;
+        }
     }
 
     .menuLinks {
@@ -86,6 +86,7 @@
             background-color: $color-dark;
             transition: 0.15s ease-in-out;
             border: none;
+            outline: none;
         }
     }
 }

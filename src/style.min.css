@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Fonts: Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 /* font-family: 'Poppins', sans-serif; */
@@ -5,14 +6,6 @@
 /* Font, weight and sizes-------------------------------------------*/
 /* Border radius ------------------------------------------*/
 /* Others --------------------------------------------------*/
-.bg-theme {
-  background-color: #FF7373;
-}
-
-.bg-dark {
-  background-color: #222529 !important;
-}
-
 html, body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -32,13 +25,21 @@ a:hover {
   border: 1px solid red !important;
 }
 
+.bg-theme {
+  background-color: #FF7373;
+}
+
+.bg-dark {
+  background-color: #222529 !important;
+}
+
 @media (min-width: 1600px) {
   .container {
     max-width: 1680px;
   }
 }
 .btn-theme {
-  position: absolute;
+  position: relative;
   width: 100%;
   text-align: center;
   background-color: #FF7373;
@@ -64,7 +65,7 @@ a:hover {
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
-.btn-theme:hover {
+.btn-theme .btn-theme:hover {
   color: #fff !important;
   background-color: #222529;
   text-decoration: none;
@@ -81,6 +82,10 @@ a:hover {
   grid-area: logo;
   font-size: 2.188rem;
   font-weight: 700;
+  color: #222529;
+  text-decoration: none;
+}
+.mainMenu .logo:hover {
   color: #222529;
   text-decoration: none;
 }
@@ -142,6 +147,7 @@ a:hover {
   background-color: #222529;
   transition: 0.15s ease-in-out;
   border: none;
+  outline: none;
 }
 
 @media (min-width: 992px) {
@@ -252,7 +258,6 @@ a:hover {
 .product-grid .card:hover .btn-card-theme {
   display: flex !important;
   color: #fff;
-  justify-content: center;
 }
 
 @media (min-width: 1200px) {
@@ -283,4 +288,170 @@ footer .socialmedia a {
 footer .socialmedia a:hover {
   color: #FF7373;
   text-decoration: none;
+}
+
+/* map ----------------------*/
+.map {
+  width: 100%;
+}
+
+/* formContact ----------------------*/
+.formContactSection {
+  font-weight: 400;
+  margin-bottom: 110px;
+}
+
+.formContactSection .container {
+  width: 1110px;
+}
+
+.formContactSection h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.formContactSection .formContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.formContactSection .formContact input {
+  height: 50px;
+  width: 100%;
+  padding: 18px 20px;
+  margin-top: 30px;
+  border: 1px solid rgba(112, 112, 112, 0.4);
+}
+
+.formContactSection .formContact .textareaMessage {
+  grid-column: 1/-1;
+}
+
+.formContactSection .formContact .textareaMessage textarea {
+  min-height: 140px;
+  padding: 18px 20px;
+  border: 1px solid rgba(112, 112, 112, 0.4);
+  resize: none;
+  width: 100%;
+}
+
+.formContactSection .formContact .error {
+  color: #FF7373;
+  border: 1px solid #FF7373;
+}
+
+.formContactSection .formContact .errorMessage {
+  margin-top: 5px;
+  color: #FF7373;
+  font-size: 0.8;
+}
+
+.formContactSection .formContact .button {
+  width: 210px;
+  height: 50px;
+  padding: 0px 0px;
+  border: none;
+}
+
+/* map ----------------------*/
+.map {
+  width: 100%;
+}
+
+/* formContact ----------------------*/
+.formContactSection {
+  font-weight: 400;
+  margin-bottom: 110px;
+}
+
+.formContactSection .container {
+  width: 1110px;
+}
+
+.formContactSection h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.formContactSection .formContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.formContactSection .formContact input {
+  height: 50px;
+  width: 100%;
+  padding: 18px 20px;
+  margin-top: 30px;
+  border: 1px solid rgba(112, 112, 112, 0.4);
+}
+
+.formContactSection .formContact .textareaMessage {
+  grid-column: 1/-1;
+}
+
+.formContactSection .formContact .textareaMessage textarea {
+  min-height: 140px;
+  padding: 18px 20px;
+  border: 1px solid rgba(112, 112, 112, 0.4);
+  resize: none;
+  width: 100%;
+}
+
+.formContactSection .formContact .error {
+  color: #FF7373;
+  border: 1px solid #FF7373;
+}
+
+.formContactSection .formContact .errorMessage {
+  margin-top: 5px;
+  color: #FF7373;
+  font-size: 0.8;
+}
+
+.formContactSection .formContact .button {
+  width: 210px;
+  height: 50px;
+  padding: 0px 0px;
+  border: none;
+}
+
+/* pageMenu -------------------------*/
+.pageMenu .container {
+  max-width: 1110px;
+}
+.pageMenu .pageMenu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #FF7373;
+}
+.pageMenu .pageMenu-list li {
+  display: inline-block;
+  font-weight: 500;
+}
+.pageMenu .pageMenu-list li a {
+  color: #222529;
+  transition: 0.15s ease-in-out;
+  text-decoration: none;
+}
+.pageMenu .pageMenu-list li a:hover {
+  color: #FF7373;
+  text-decoration: underline;
+}
+.pageMenu .pageMenu-list li + li:before {
+  content: "  >  ";
+  font-weight: 400;
+  color: #000;
+}
+
+/* Map ------------------------------*/
+iframe {
+  width: 100%;
+  height: 390px;
+  border: 0;
+  margin-top: 30px;
+  margin-bottom: 75px;
 }
