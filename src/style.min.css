@@ -25,6 +25,10 @@ a:hover {
   border: 1px solid red !important;
 }
 
+input {
+  border: 1px solid rgba(112, 112, 112, 0.4) !important;
+}
+
 .bg-theme {
   background-color: #FF7373;
 }
@@ -272,6 +276,7 @@ footer {
   align-items: center;
   background-color: #f8f8f8;
   padding: 25px;
+  width: 100%;
 }
 footer .socialmedia {
   margin-bottom: 25px;
@@ -290,134 +295,8 @@ footer .socialmedia a:hover {
   text-decoration: none;
 }
 
-/* map ----------------------*/
-.map {
-  width: 100%;
-}
-
 /* formContact ----------------------*/
-.formContactSection {
-  font-weight: 400;
-  margin-bottom: 110px;
-}
-
-.formContactSection .container {
-  width: 1110px;
-}
-
-.formContactSection h2 {
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
-.formContactSection .formContact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.formContactSection .formContact input {
-  height: 50px;
-  width: 100%;
-  padding: 18px 20px;
-  margin-top: 30px;
-  border: 1px solid rgba(112, 112, 112, 0.4);
-}
-
-.formContactSection .formContact .textareaMessage {
-  grid-column: 1/-1;
-}
-
-.formContactSection .formContact .textareaMessage textarea {
-  min-height: 140px;
-  padding: 18px 20px;
-  border: 1px solid rgba(112, 112, 112, 0.4);
-  resize: none;
-  width: 100%;
-}
-
-.formContactSection .formContact .error {
-  color: #FF7373;
-  border: 1px solid #FF7373;
-}
-
-.formContactSection .formContact .errorMessage {
-  margin-top: 5px;
-  color: #FF7373;
-  font-size: 0.8;
-}
-
-.formContactSection .formContact .button {
-  width: 210px;
-  height: 50px;
-  padding: 0px 0px;
-  border: none;
-}
-
-/* map ----------------------*/
-.map {
-  width: 100%;
-}
-
 /* formContact ----------------------*/
-.formContactSection {
-  font-weight: 400;
-  margin-bottom: 110px;
-}
-
-.formContactSection .container {
-  width: 1110px;
-}
-
-.formContactSection h2 {
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
-.formContactSection .formContact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.formContactSection .formContact input {
-  height: 50px;
-  width: 100%;
-  padding: 18px 20px;
-  margin-top: 30px;
-  border: 1px solid rgba(112, 112, 112, 0.4);
-}
-
-.formContactSection .formContact .textareaMessage {
-  grid-column: 1/-1;
-}
-
-.formContactSection .formContact .textareaMessage textarea {
-  min-height: 140px;
-  padding: 18px 20px;
-  border: 1px solid rgba(112, 112, 112, 0.4);
-  resize: none;
-  width: 100%;
-}
-
-.formContactSection .formContact .error {
-  color: #FF7373;
-  border: 1px solid #FF7373;
-}
-
-.formContactSection .formContact .errorMessage {
-  margin-top: 5px;
-  color: #FF7373;
-  font-size: 0.8;
-}
-
-.formContactSection .formContact .button {
-  width: 210px;
-  height: 50px;
-  padding: 0px 0px;
-  border: none;
-}
-
 /* pageMenu -------------------------*/
 .pageMenu .container {
   max-width: 1110px;
@@ -448,10 +327,77 @@ footer .socialmedia a:hover {
 }
 
 /* Map ------------------------------*/
+.map {
+  width: 100%;
+}
+
 iframe {
   width: 100%;
   height: 390px;
   border: 0;
   margin-top: 30px;
-  margin-bottom: 75px;
+  margin-bottom: 45px;
+}
+
+/* formContact ----------------------*/
+.contact-form {
+  font-weight: 400;
+  margin-bottom: 110px;
+}
+.contact-form .container {
+  max-width: 1110px;
+}
+.contact-form h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.contact-form .formContact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.contact-form .formContact input {
+  height: 50px;
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid rgba(112, 112, 112, 0.4);
+}
+.contact-form .formContact .textarea {
+  grid-column: 1/-1;
+}
+.contact-form .formContact .textarea textarea {
+  min-height: 140px;
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid rgba(112, 112, 112, 0.4);
+  resize: none;
+}
+.contact-form .formContact .error {
+  color: #FF7373;
+  border: 1px solid #FF7373;
+  border: 1px solid blue !important;
+  outline-color: red !important;
+}
+.contact-form .formContact .errorMessage {
+  margin-top: 5px;
+  color: #FF7373;
+  font-size: 0.8;
+}
+.contact-form .formContact .button {
+  width: 210px;
+  height: 50px;
+  padding: 0px 0px;
+  border: none;
+}
+.contact-form .formContact .button:hover {
+  color: #fff !important;
+  background-color: #222529;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .contact-form .formContact {
+    grid-template-columns: 1fr 1fr;
+  }
 }

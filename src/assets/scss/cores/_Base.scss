@@ -21,6 +21,14 @@ a {
     border: 1px solid red !important;
 }
 
+input {
+    border: 1px solid $color-lightgray !important;
+}
+
+// input:focus {
+//     outline-color: red;
+// }
+
 .bg-theme {
     background-color: $color-theme;
 }

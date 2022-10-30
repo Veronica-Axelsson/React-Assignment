@@ -11,16 +11,6 @@
         margin: 0;
         color: $color-theme;
 
-        // display: flex;
-        // text-decoration: none;
-
-        // .pageMenu-list li a span .blackdash {
-        //     color: $color-dark;
-        //     background-color: $color-dark;
-        //     margin-right: 3rem;
-        // }
-
-
         li {
             display: inline-block;
             font-weight: 500;
@@ -29,7 +19,6 @@
                 color: $color-dark;
                 transition: 0.15s ease-in-out;
                 text-decoration: none;
-            
 
                 &:hover {
                     color: $color-theme;
