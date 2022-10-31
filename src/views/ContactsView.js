@@ -11,23 +11,15 @@ const ContactsView = () => {
 
   return (
     <>
-{/* MainMenu  -------------------------------------------------------*/}
 
     <MainMenuSection/>
-{/* pageMenu  -------------------------------------------------------*/}
     <BreadcrumbSection currentPage="Contacts"/>
 
-{/* Map  -------------------------------------------------------*/}
     <div className="map">
         <MapSection/>
     </div>
-
-{/* contact form  -------------------------------------------------------*/}
     <ContactFormSection />
-
-
-{/* Footer  -------------------------------------------------------*/}
-      <FooterSection/>
+    <FooterSection/>
     </>
   )
 }

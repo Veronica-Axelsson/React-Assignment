@@ -37,7 +37,7 @@ const ProductCard = ({product}) => {
             <div className="card-body ">
                 <p className="card-category">{product.category}</p>
                 <h5 className="card-title">{product.name}</h5>
-                <p className="rating">
+                <p className="card-rating">
                     <i className="__star fa-sharp fa-solid fa-star"></i>
                     <i className="__star fa-sharp fa-solid fa-star"></i>
                     <i className="__star fa-sharp fa-solid fa-star"></i>

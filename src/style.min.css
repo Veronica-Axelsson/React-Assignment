@@ -51,29 +51,6 @@ input {
   padding: 20px 50px;
   transition: all 0.15s ease-in-out;
 }
-.btn-theme .corner-left {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 10px;
-  left: 10px;
-  border-left: 1px solid #fff;
-  border-top: 1px solid #fff;
-}
-.btn-theme .corner-right {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  bottom: 10px;
-  right: 10px;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-.btn-theme .btn-theme:hover {
-  color: #fff !important;
-  background-color: #222529;
-  text-decoration: none;
-}
 
 .mainMenu {
   display: grid;
@@ -264,6 +241,11 @@ input {
   color: #fff;
 }
 
+@media (max-width: 1100px) {
+  .productCard .card-img {
+    display: none;
+  }
+}
 @media (min-width: 1200px) {
   .product-grid .container {
     max-width: 1110px;
@@ -400,4 +382,84 @@ iframe {
   .contact-form .formContact {
     grid-template-columns: 1fr 1fr;
   }
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 846px;
+  margin-bottom: 60px;
+}
+.hero .img-left {
+  margin-left: 0;
+  display: none;
+  max-height: 700px;
+}
+.hero .img-right {
+  margin-right: 0;
+  display: none;
+  max-height: 700px;
+}
+.hero .heroBody {
+  margin-top: 30px;
+  padding-bottom: 60px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  /* Button pink */
+}
+.hero .heroBody h2 {
+  margin-top: 5px;
+  padding-bottom: 0;
+  width: 100%;
+  font-size: 4.063rem;
+  font-weight: 800;
+}
+.hero .heroBody p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.hero .heroBody .__button {
+  display: flex;
+  justify-content: center;
+}
+.hero .heroBody .button-pink {
+  background-color: #FF7373;
+  height: 60px;
+  width: 188px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.15s ease-in-out;
+}
+.hero .heroBody .button-pink:hover {
+  background-color: #222529;
+}
+.hero .heroBody .button-pink .button-text {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+.hero .heroBody .button-pink .corner-top-left {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+}
+.hero .heroBody .button-pink .corner-bottom-right {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }

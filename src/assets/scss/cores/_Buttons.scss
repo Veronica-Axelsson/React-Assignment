@@ -1,3 +1,5 @@
+
+
 .btn-theme {
     position: relative;
     width: 100%;
@@ -7,35 +9,62 @@
     padding: 20px 50px;
     transition: all 0.15s ease-in-out;
 
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // height: 50px;
-    // bottom: 0;
+    // Nytt eventuellt använda ---------------------------------------------
+    // .btn-theme::before {
+    //     content: "";
+    //     position: absolute;
+    //     height: 20px;
+    //     width: 20px;
+    //     top: 10px;
+    //     left: 10px;
+    //     border-left: 1px solid #ffffff;
+    //     border-top: 1px solid #ffffff;
+    // }
 
-    .corner-left {
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        top: 10px;
-        left: 10px;
-        border-left: 1px solid $color-white;
-        border-top: 1px solid $color-white;
-    }
+    // .btn-theme::after {
+    //     content: "";
+    //     position: absolute;
+    //     height: 20px;
+    //     width: 20px;
+    //     bottom: 10px;
+    //     right: 10px;
+    //     border-right: 1px solid #ffffff;
+    //     border-bottom: 1px solid #ffffff;
+    // }
 
-    .corner-right {
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        bottom: 10px;
-        right: 10px;
-        border-right: 1px solid $color-white;
-        border-bottom: 1px solid $color-white;
-    }
+    // Nytt slut -----------------------------------------------------------
+    // .corner-left {
+    //     position: absolute;
+    //     height: 20px;
+    //     width: 20px;
+    //     top: 10px;
+    //     left: 10px;
+    //     border-left: 1px solid $color-white;
+    //     border-top: 1px solid $color-white;
+    // }
 
-    .btn-theme:hover {
-        color: $color-white !important;
-        background-color: $color-dark;
-        text-decoration: none;
-    }
+    // .corner-right {
+    //     position: absolute;
+    //     height: 20px;
+    //     width: 20px;
+    //     bottom: 10px;
+    //     right: 10px;
+    //     border-right: 1px solid $color-white;
+    //     border-bottom: 1px solid $color-white;
+    // }
+
+    // .btn-theme:hover {
+    //     color: $color-white !important;
+    //     background-color: $color-dark;
+    //     text-decoration: none;
+    // }
+
+
+// ---------------------------------------------------------
+
+
+
+
+
+
 }
