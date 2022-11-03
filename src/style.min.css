@@ -233,7 +233,7 @@ input {
   font-size: 1.125rem;
   font-weight: 600;
 }
-.product-grid .card:hover .card.menu {
+.product-grid .card:hover .card.menu .menu-link {
   display: flex !important;
 }
 .product-grid .card:hover .btn-card-theme {
@@ -241,11 +241,6 @@ input {
   color: #fff;
 }
 
-@media (max-width: 1100px) {
-  .productCard .card-img {
-    display: none;
-  }
-}
 @media (min-width: 1200px) {
   .product-grid .container {
     max-width: 1110px;

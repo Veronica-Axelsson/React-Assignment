@@ -13,7 +13,7 @@ const ProductDetailsView = () => {
     <MainMenuSection/>
 
     <div className="container mt-5">
-    <h1>${params.name}</h1>
+    <h1>{params.name}</h1>
     </div>
 
     <FooterSection/>

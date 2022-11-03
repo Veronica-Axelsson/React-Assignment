@@ -34,6 +34,8 @@ export const validate = (e, form = null) => {
                 return validate_email(value)
             case 'comments':
                 return validate_comments(value)
+            default:
+                
         }
     }
 }
@@ -48,7 +50,7 @@ const validate_name = (value) => {
 }
 
 const validate_email = (value) => {
-    const regex_email = (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
+    const regex_email = (/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
 
     if(!value)
         return "An email adress is required"

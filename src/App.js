@@ -1,5 +1,7 @@
+import React, {useEffect, useState} from 'react';
 import './style.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 import HomeView from './views/HomeView';
 import CategoriesView from './views/CategoriesView';
@@ -11,18 +13,32 @@ import CompareView from './views/CompareView';
 import WishListView from './views/WishListView';
 import ShoppingCartView from './views/ShoppingCartView';
 import NotFoundView from './views/NotFoundView';
+import {ProductContext} from './contexts/contexts'
+
 // import FooterSection from './sections/FooterSection';
 
 function App() {
+  const [products, setProducts] = useState([])
+
+
+
+  useEffect( () => {
+    const fetchData = async () => {
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
+      setProducts(await result.json())
+    }
+    fetchData();
+
+  }, [])
+
   return (
     <BrowserRouter>
+      <ProductContext.Provider value={products}>
         <Routes>
-          <Route path="/" element={<HomeView/>}/>
-          <Route path="/Categories" element={<CategoriesView/>}/>
-          <Route path="/Products" element={<ProductsView/>}/>
-
-          <Route path="/Products/:name" element={<ProductDetailsView/>}/>
-
+          <Route path="/" element={<HomeView />}/>
+          <Route path="/categories" element={<CategoriesView/>}/>
+          <Route path="/products" element={<ProductsView />}/>
+          <Route path="/products/:name" element={<ProductDetailsView/>}/>
           <Route path="/contacts" element={<ContactsView/>}/>
           <Route path="/Search" element={<SearchView/>}/>
           <Route path="/compare" element={<CompareView/>}/>
@@ -30,9 +46,11 @@ function App() {
           <Route path="/shoppingcart" element={<ShoppingCartView/>}/>
           <Route path="*" element={<NotFoundView/>}/>
         </Routes>
+      </ProductContext.Provider>
     </BrowserRouter>
     
   );
 }
+// Tiil homeview items={products}
 
 export default App;

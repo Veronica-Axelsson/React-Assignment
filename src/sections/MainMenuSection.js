@@ -11,10 +11,8 @@ const MainMenuSection = () => {
 
   return (
     <nav className="mainMenu container">
-        <NavLink className="logo" to="/" end>
-            Fixxo.
-        </NavLink>
-        <div className={`menuLinks ${showMenu ? "d-grid": ""}`}>
+        <NavLink className="logo" to="/" end>Fixxo.</NavLink>
+        <div className={`menuLinks ${ showMenu ? "d-grid": ""}`}>
             <NavLink className="menuLink" to="/" end>Home</NavLink>
             <NavLink className="menuLink" to="/categories" end>Categories</NavLink>
             <NavLink className="menuLink" to="/products" >Products</NavLink>
