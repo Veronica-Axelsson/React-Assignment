@@ -33,25 +33,25 @@
     // }
 
     // Nytt slut -----------------------------------------------------------
-    // .corner-left {
-    //     position: absolute;
-    //     height: 20px;
-    //     width: 20px;
-    //     top: 10px;
-    //     left: 10px;
-    //     border-left: 1px solid $color-white;
-    //     border-top: 1px solid $color-white;
-    // }
+    .corner-left {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 10px;
+        left: 10px;
+        border-left: 1px solid $color-white;
+        border-top: 1px solid $color-white;
+    }
 
-    // .corner-right {
-    //     position: absolute;
-    //     height: 20px;
-    //     width: 20px;
-    //     bottom: 10px;
-    //     right: 10px;
-    //     border-right: 1px solid $color-white;
-    //     border-bottom: 1px solid $color-white;
-    // }
+    .corner-right {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        bottom: 10px;
+        right: 10px;
+        border-right: 1px solid $color-white;
+        border-bottom: 1px solid $color-white;
+    }
 
     // .btn-theme:hover {
     //     color: $color-white !important;
