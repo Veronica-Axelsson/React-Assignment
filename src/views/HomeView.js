@@ -1,25 +1,24 @@
 import React, { useContext } from 'react';
 import MainMenuSection from '../sections/MainMenuSection'
-// import Hero from '../sections/Hero'
+import Hero from '../sections/Hero'
 import FooterSection from '../sections/FooterSection'
 import ProductGridSection from '../sections/ProductGridSection'
-import {ProductContext} from '../contexts/contexts'
 import BuyInfoSection from '../sections/BuyInfoSection';
+import { FeaturedProductsContext } from '../contexts/contexts'
 
 
 const HomeView = () => {
   window.top.document.title = 'Fixxo.'
 
-  const productContext = useContext(ProductContext)
-
+  const products = useContext(FeaturedProductsContext);
 
   return (
     <>
     <header>
       <MainMenuSection/>
-      {/* <Hero/> */}
+      <Hero/>
     </header>
-    <ProductGridSection title="Featured Products" items={productContext.featuredProducts} />
+    <ProductGridSection title="Featured Products" items={products} />
     <BuyInfoSection />
     {/* Topics */}
     {/* productSection */}

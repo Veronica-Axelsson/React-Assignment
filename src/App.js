@@ -13,35 +13,35 @@ import CompareView from './views/CompareView';
 import WishListView from './views/WishListView';
 import ShoppingCartView from './views/ShoppingCartView';
 import NotFoundView from './views/NotFoundView';
-import {ProductContext} from './contexts/contexts'
+import {ProductContext, FeaturedProductsContext} from './contexts/contexts'
 
 // import FooterSection from './sections/FooterSection';
 
 function App() {
-  const [products, setProducts] = useState({
-    all: [],
-    featuredProducts: []
-  })
+  const [products, setProducts] = useState([])
+  const [featured, setFeatured] = useState([])
 
-  useEffect( () => {
-    const fetchAllProducts = async () => {
-      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
-      setProducts({...products, all: await result.json()})
+  useEffect(() => {
+    const fetchAllData = async () => {
+      const result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
+      setProducts(await result.json())
     }
-    fetchAllProducts()
+    fetchAllData()
 
-    const fetchFeaturedProducts = async () => {
-      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
-      setProducts({...products, featuredProducts: await result.json()})
-
+    const fetchFeaturedData = async () => {
+      const result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
+      setFeatured(await result.json())
     }
-    fetchFeaturedProducts()
+    fetchFeaturedData()
 
-  }, [setProducts])
+  }, [setProducts, setFeatured])  
+
+
 
   return (
     <BrowserRouter>
       <ProductContext.Provider value={products}>
+      <FeaturedProductsContext.Provider value={featured}>
         <Routes>
           <Route path="/" element={<HomeView />}/>
           <Route path="/categories" element={<CategoriesView/>}/>
@@ -54,11 +54,10 @@ function App() {
           <Route path="/shoppingcart" element={<ShoppingCartView/>}/>
           <Route path="*" element={<NotFoundView/>}/>
         </Routes>
+      </FeaturedProductsContext.Provider>
       </ProductContext.Provider>
     </BrowserRouter>
-    
   );
 }
-// Tiil homeview items={products}
 
 export default App;

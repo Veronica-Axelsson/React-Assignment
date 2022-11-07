@@ -4,20 +4,16 @@ import { NavLink } from 'react-router-dom'
 const ProductCard = ({item}) => {
 
     const addToWishList = (e) => {
-        // console.log("Added to wish list")
     }
 
     const addToCompare = (e) => {
-        // console.log("Added to compare")
     }
 
     const addToCart = (e) => {
-        // console.log("Added to shopping cart")
     }
 
 
   return (
-
         <div className="col ">
             <div className="card ">
                 <div className="card-img">
