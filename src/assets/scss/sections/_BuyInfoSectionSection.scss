@@ -1,0 +1,42 @@
+.buyInfoSection {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+
+    .divider {
+        width: 1110px;
+        display:block;
+        margin:auto;
+        padding-bottom: 2rem;        
+    }
+
+    .container {
+        max-width: 1110px;
+        padding: 0;
+    }
+
+    .buyInfo {
+        position: relative;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+   
+        h3 {
+            font-size: $font-size-20;
+            font-weight: $font-weight-bold;
+        }
+
+        p{
+            font-size: $font-size-16;
+            font-weight: $font-weight-regular;
+        }
+    }
+}
+
+.__marginL {
+    margin: 0 0.5rem 0 1rem;
+}
+
+.__marginR {
+    margin: 0 1rem 0 0;
+}
