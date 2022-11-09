@@ -1,10 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext } from 'react'
 import MainMenuSection from '../sections/MainMenuSection'
 import Hero from '../sections/Hero'
-import FooterSection from '../sections/FooterSection'
 import ProductGridSection from '../sections/ProductGridSection'
-import BuyInfoSection from '../sections/BuyInfoSection';
+import TopicsSection from '../sections/TopicsSection'
+import ProductSection1 from '../sections/ProductSection1'
+// import ProductSection2 from '../sections/ProductSection2'
+import BuyInfoSection from '../sections/BuyInfoSection'
 import { FeaturedProductsContext } from '../contexts/contexts'
+import FooterSection from '../sections/FooterSection'
+
 
 
 const HomeView = () => {
@@ -19,10 +23,10 @@ const HomeView = () => {
       <Hero/>
     </header>
     <ProductGridSection title="Featured Products" items={products} />
+    <TopicsSection />
+    <ProductSection1 />
+    {/* <ProductSection2 /> */}
     <BuyInfoSection />
-    {/* Topics */}
-    {/* productSection */}
-    {/* buyInfo */}
     <FooterSection/>
     </>
   )
