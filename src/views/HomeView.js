@@ -4,7 +4,7 @@ import Hero from '../sections/Hero'
 import ProductGridSection from '../sections/ProductGridSection'
 import TopicsSection from '../sections/TopicsSection'
 import ProductSection1 from '../sections/ProductSection1'
-// import ProductSection2 from '../sections/ProductSection2'
+import ProductSection2 from '../sections/ProductSection2'
 import BuyInfoSection from '../sections/BuyInfoSection'
 import { FeaturedProductsContext } from '../contexts/contexts'
 import FooterSection from '../sections/FooterSection'
@@ -25,7 +25,7 @@ const HomeView = () => {
     <ProductGridSection title="Featured Products" items={products} />
     <TopicsSection />
     <ProductSection1 />
-    {/* <ProductSection2 /> */}
+    <ProductSection2 />
     <BuyInfoSection />
     <FooterSection/>
     </>

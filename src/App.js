@@ -13,13 +13,15 @@ import CompareView from './views/CompareView';
 import WishListView from './views/WishListView';
 import ShoppingCartView from './views/ShoppingCartView';
 import NotFoundView from './views/NotFoundView';
-import {ProductContext, FeaturedProductsContext} from './contexts/contexts'
+import {ProductContext, FeaturedProductsContext, ProductSection1Context} from './contexts/contexts';
 
 // import FooterSection from './sections/FooterSection';
 
 function App() {
   const [products, setProducts] = useState([])
   const [featured, setFeatured] = useState([])
+  const [productSection1, setProductSection1] = useState([])
+
 
   useEffect(() => {
     const fetchAllData = async () => {
@@ -34,7 +36,13 @@ function App() {
     }
     fetchFeaturedData()
 
-  }, [setProducts, setFeatured])  
+    const fetchProductSection1 = async () => {
+      const result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
+      setProductSection1(await result.json())
+    }
+    fetchProductSection1()
+
+  }, [setProducts, setFeatured, setProductSection1])  
 
 
 
@@ -42,6 +50,8 @@ function App() {
     <BrowserRouter>
       <ProductContext.Provider value={products}>
       <FeaturedProductsContext.Provider value={featured}>
+      <ProductSection1Context.Provider value={productSection1}>
+
         <Routes>
           <Route path="/" element={<HomeView />}/>
           <Route path="/categories" element={<CategoriesView/>}/>
@@ -54,6 +64,7 @@ function App() {
           <Route path="/shoppingcart" element={<ShoppingCartView/>}/>
           <Route path="*" element={<NotFoundView/>}/>
         </Routes>
+      </ProductSection1Context.Provider >
       </FeaturedProductsContext.Provider>
       </ProductContext.Provider>
     </BrowserRouter>

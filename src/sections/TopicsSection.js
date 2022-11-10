@@ -8,9 +8,9 @@ const TopicsSection = () => {
   return (
     <section className="topicsSection">
         <div className="container">
-            <div className="TopicsBoxes">
+            <div className="TopicsBoxes .__1fr">
                 <div className='boxLeft'>
-                    <img src={Models5} alt="showcase-img-1"/>
+                    <img className="ImgLeft" src={Models5} alt="showcase-img-1"/>
                     <div className="textButton">
                         <h2>Pamela Reif's</h2>
                         <h2>Top Picks</h2>
@@ -24,7 +24,7 @@ const TopicsSection = () => {
                     </div>
                 </div>
 
-                <div className='boxRight'>
+                <div className='boxRight .__1fr'>
                     <div className="textButton">
                         <h2>Let's Be</h2>
                         <h2>Conscious</h2>
@@ -36,7 +36,7 @@ const TopicsSection = () => {
                             </div>
                         </div>
                     </div>
-                    <img src={Models6} alt="showcase-img-1"/>
+                    <img className="ImgRight" src={Models6} alt="showcase-img-1"/>
                 </div>
             </div>
 
