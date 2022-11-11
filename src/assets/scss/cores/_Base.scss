@@ -3,13 +3,11 @@ html, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
-   
 }
 
 a {
     color: $color-theme;
     text-decoration: none;
-
 
     &:hover {
         color: $color-theme;
@@ -25,10 +23,6 @@ input {
     border: 1px solid $color-lightgray !important;
 }
 
-// input:focus {
-//     outline-color: red;
-// }
-
 .bg-theme {
     background-color: $color-theme;
 }
@@ -36,7 +30,6 @@ input {
 .bg-dark {
     background-color: $color-dark !important;
 }
-
 
 @media (min-width:1600px) {
     .container {

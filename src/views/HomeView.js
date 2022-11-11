@@ -1,3 +1,5 @@
+// Home page
+
 import React, { useContext } from 'react'
 import MainMenuSection from '../sections/MainMenuSection'
 import Hero from '../sections/Hero'
@@ -8,8 +10,6 @@ import ProductSection2 from '../sections/ProductSection2'
 import BuyInfoSection from '../sections/BuyInfoSection'
 import { FeaturedProductsContext } from '../contexts/contexts'
 import FooterSection from '../sections/FooterSection'
-
-
 
 const HomeView = () => {
   window.top.document.title = 'Fixxo.'

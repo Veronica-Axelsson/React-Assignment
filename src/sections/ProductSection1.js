@@ -1,10 +1,10 @@
+// Big image and 4 products for home view.
+
 import React, { useContext }  from 'react'
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom'
 import Models7 from '../assets/images/Models/Models7.png'
 import ProductGridSection2 from '../sections/ProductGridSection2'
 import { ProductSection1Context } from '../contexts/contexts'
-
-
 
 const ProductSection1 = () => {
 
@@ -13,12 +13,10 @@ const ProductSection1 = () => {
   return (
     <section className="productSection1">
       <div className="container">
-
         <div className="divide2">
-        {/* Left side --------------------------------------------------------*/}
+          {/* Left side - Big image --------------------------------------------------------*/}
           <div className="textOnImg ">
             <img className="imgSize" src={Models7} alt="" />
-            
             <div className="centering">
               <h2>2 FOR USD $29</h2>
               <div className="__button">
@@ -32,14 +30,9 @@ const ProductSection1 = () => {
 
           </div>
 
-        {/* Right side --------------------------------------------------------*/}
+          {/* Right side - Products --------------------------------------------------------*/}
           <div className="productsSize">
-          <ProductGridSection2 items={products} />
-
-
-          
-    
-
+            <ProductGridSection2 items={products} />
           </div>
         </div>
       </div>

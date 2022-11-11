@@ -1,42 +1,121 @@
-.buyInfoSection {
-    margin-top: 0;
-    margin-bottom: 4rem;
+/* Buying info section ----------------------*/
 
-    .divider {
-        width: 1110px;
-        display:block;
-        margin:auto;
-        padding-bottom: 2rem;        
+@media (max-width: 576px) {
+
+    .mobile {
+        display: flex;
     }
 
-    .container {
-        max-width: 1110px;
-        padding: 0;
+    .desktop {
+        display: none;
     }
 
-    .buyInfo {
-        position: relative;
+    .displayFlexBlock {
+        display: block;
+    }
+
+    .buyInfoSection {
+        margin-top: 0;
+        margin-bottom: 4rem;
+    
+        .container {
+            max-width: 90%;
+            padding: 0;
+        }
+    
+        .buyInfo {
+            position: relative;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+    
+            h3 {
+                font-size: $font-size-20;
+                font-weight: $font-weight-bold;
+            }
+    
+            p{
+                font-size: $font-size-16;
+                font-weight: $font-weight-regular;
+            }
+        }
+    }
+    
+    .__marginL {
+        margin: 0 0.5rem 0 1rem;
+    }
+    
+    .__marginR {
+        margin: 0 1rem 0 0;
+    }
+}
+
+@media (min-width: 577px) {
+
+    .mobile {
+        display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
+    }
 
-   
-        h3 {
-            font-size: $font-size-20;
-            font-weight: $font-weight-bold;
+    .desktop {
+        display: none;
+    }
+
+    .displayFlexBlock {
+        display: block;
+    }
+
+    .buyInfoSection {
+        margin-top: 0;
+        margin-bottom: 4rem;
+    
+        .container {
+            max-width: 1110px;
+            padding: 0;
         }
-
-        p{
-            font-size: $font-size-16;
-            font-weight: $font-weight-regular;
+    
+        .buyInfo {
+            position: relative;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+    
+       
+            h3 {
+                font-size: $font-size-20;
+                font-weight: $font-weight-bold;
+            }
+    
+            p{
+                font-size: $font-size-16;
+                font-weight: $font-weight-regular;
+            }
         }
     }
+    
+    .__marginL {
+        margin: 0 0.5rem 0 1rem;
+    }
+    
+    .__marginR {
+        margin: 0 1rem 0 0;
+    }
+    
 }
 
-.__marginL {
-    margin: 0 0.5rem 0 1rem;
+@media (min-width: 990px) {
+    
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+    }    
 }
 
-.__marginR {
-    margin: 0 1rem 0 0;
-}
+
+
+

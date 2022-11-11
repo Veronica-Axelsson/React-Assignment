@@ -1,3 +1,5 @@
+// Contact form section
+
 import React, {useState} from 'react'
 import {validate, submitData} from '../scripts/validation'
 
@@ -23,7 +25,6 @@ const ContactFormSection = () => {
                 setComments(value)
                 break
             default:
-
         }
 
         setErrors({...errors, [id]: validate(e)})
@@ -45,7 +46,6 @@ const ContactFormSection = () => {
             setComments('')
             setErrors({})
 
-
             if(await submitData('https://win22-webapi.azurewebsites.net/api/contactform', 'POST', json)) {
                 setSubmitted(true)
                 setFailedSubmit(false)            
@@ -60,7 +60,6 @@ const ContactFormSection = () => {
         
     }
 
-
     return (
         <section className="contact-form">
             <div className="container">
@@ -73,7 +72,7 @@ const ContactFormSection = () => {
                     </div>) : (<></>)
                 }
 
-{
+                {
                     failedSubmit ?
                     (<div className="alert alert-danger text-center" role="alert">
                         <h3>Something went wrong!</h3>
@@ -108,6 +107,5 @@ const ContactFormSection = () => {
         </section>
     )
 }
-
 
 export default ContactFormSection

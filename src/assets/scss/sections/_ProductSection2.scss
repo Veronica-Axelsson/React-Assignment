@@ -1,17 +1,176 @@
-.productSection2 {
-    // margin-top: -60rem;
-    
-    .container {
-        max-width: 1680px;
+@media (max-width: 767px) {
+
+    .productSection2 {
+        // margin-top: -60rem;
+
+        .desktop {
+            display: none;
+        }
+
+        .container {
+            max-width: 1680px;
+        }
+        
+        .divide2 {
+            display: block;
+            margin-top: 2rem;
+        }
+        // Right side-----------------------------
+        .textOnImg {
+            max-height: auto;
+            position: relative;
+            display: inline-block;
+
+            .imgSize {
+                height: auto;
+                width: 100%;
+                // padding-right: 0.8rem;
+                object-fit: fill;
+                margin-bottom: 2rem;
+            }
+            
+            .centering {
+                position: absolute;
+                top: 38%;
+                left: 18%;
+
+                .__button {
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            h2 {
+                color: $color-white;
+                font-size: $font-size-35;
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        // Right side-----------------------------
+        .productsSize {
+            // width: 50%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto 0 10%;
+        }
     }
+}
 
-    .divide2 {
-        display: flex;
-        margin-top: 2rem;
+@media (min-width: 768px) {
+    .productSection2 {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
 
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            display: block;
+        }
+
+        .container {
+            max-width: 1680px;
+        }
+        
+        .divide2 {
+            display: block;
+            margin-top: 2rem;
+        }
         // Left side-----------------------------
         .textOnImg {
-            width: 50%;
+            max-height: auto;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+
+            .imgSize {
+                height: 100%;
+                width: 100%;
+                // padding-right: 0.8rem;
+                object-fit: fill;
+                // margin-left: 1.7rem;
+                margin: 0 3.5%;
+            }
+            
+            .centering {
+                position: absolute;
+                top: 40%;
+                left: 39%;
+
+                .__button {
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            h2 {
+                color: $color-white;
+                font-size: $font-size-45;
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        // Right side-----------------------------
+        .productsSize {
+            width: 100%;
+            margin-left: 6%;
+            padding: 0 6rem;
+        }
+    } 
+}
+
+@media (min-width:992px) {
+    .productSection2 {
+
+        .productsSize {
+            width: 100%;
+            margin-left: 4%;
+            padding: 0 11rem;
+        }
+    }
+ 
+}
+
+@media (min-width:1180px) {
+    .productSection2 {
+
+        .productsSize {
+            width: 100%;
+            margin-left: 5%;
+            padding: 0 18rem;
+        }
+    }
+ 
+}
+
+@media (min-width: 1670px) {
+    .productSection2 {
+
+        .desktop {
+            display: flex;
+        }
+
+        .mobile {
+            display: none;
+        }
+    
+        .container {
+            max-width: 1680px;
+        }
+        
+        .divide2 {
+            display: flex;
+            margin-top: 2rem;
+        }
+        // Left side-----------------------------
+        .textOnImg {
+            width: 100%;
             max-height: auto;
             position: relative;
             display: inline-block;
@@ -42,94 +201,23 @@
                 font-weight: $font-weight-bold;
             }
         }
-            // Left side End-----------------------------
 
-            // Right side-----------------------------
-            .fullwidth {
-                width: 100%;
-                margin: 0;
-                padding: 0;
-            
-                .colWidth {
-                    width: 50%;
+        // Right side-----------------------------
+        .fullwidth {
+            width: 100%;
+            margin: 0;
+            padding: 0;
         
-                    .productsSize {
-                        width: 150%;
-                        margin-left: 58%;
-          
-            
-                    }
+            .colWidth {
+                width: 50%;
+    
+                .productsSize {
+                    width: 150%;
+                    margin-left: 58%;
+                    padding: 0 1rem;
                 }
+                
             }
+        }
     }
 }
-
-
-
-        
-    
-
-
-
-
-
-
-
-// .productSection2 {
-    
-//     .container {
-//         max-width: 1680px;
-//     }
-
-//     .divide2 {
-//         display: flex;
-//         margin-top: 5rem;
-
-   
-
-//         // Left side-----------------------------
-//         .textOnImg {
-//             max-height: auto;
-//             position: relative;
-//             display: inline-block;
-
-//             .imgSize {
-//                 width: 825px;
-//                 padding-left: 0.8rem;
-//             }
-            
-//             .centering {
-//                 position: absolute;
-//                 top: 38%;
-//                 right: 30%;
-
-//                 .__button {
-//                     text-align: center;
-//                     align-items: center;
-//                     justify-content: center;
-//                 }
-//             }
-
-//             h2 {
-//                 color: $color-white;
-//                 font-size: $font-size-45;
-//                 font-weight: $font-weight-bold;
-//             }
-//         }
-//             // Left side End-----------------------------
-
-//             .productsSize {
-//                 display: flex;
-//                 width: 70%;
-    
-//             }
-//     }
-// }
-
-
-
-        
-    
-
-
-

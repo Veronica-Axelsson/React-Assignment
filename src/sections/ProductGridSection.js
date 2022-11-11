@@ -1,3 +1,5 @@
+// Products for desktop view
+
 import React from 'react'
 import ProductCard from '../components/ProductCard'
 

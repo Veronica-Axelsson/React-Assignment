@@ -1,3 +1,5 @@
+// Products details page
+
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import MainMenuSection from '../sections/MainMenuSection'
@@ -11,11 +13,9 @@ const ProductDetailsView = () => {
   return (
     <>
     <MainMenuSection/>
-
     <div className="container mt-5">
-    <h1>{params.name}</h1>
+      <h1>{params.name}</h1>
     </div>
-
     <FooterSection/>
   </>
   )

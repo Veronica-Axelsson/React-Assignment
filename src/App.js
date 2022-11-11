@@ -15,13 +15,10 @@ import ShoppingCartView from './views/ShoppingCartView';
 import NotFoundView from './views/NotFoundView';
 import {ProductContext, FeaturedProductsContext, ProductSection1Context} from './contexts/contexts';
 
-// import FooterSection from './sections/FooterSection';
-
 function App() {
   const [products, setProducts] = useState([])
   const [featured, setFeatured] = useState([])
   const [productSection1, setProductSection1] = useState([])
-
 
   useEffect(() => {
     const fetchAllData = async () => {
@@ -43,8 +40,6 @@ function App() {
     fetchProductSection1()
 
   }, [setProducts, setFeatured, setProductSection1])  
-
-
 
   return (
     <BrowserRouter>

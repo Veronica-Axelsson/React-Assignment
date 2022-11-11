@@ -1,6 +1,7 @@
+// Breadcrumb Menu section
+
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
 
 const BreadcrumbSection = ({currentPage}) => {
   return (

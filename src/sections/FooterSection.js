@@ -1,3 +1,5 @@
+// Footer section with social icons at bottom of the site on every page
+
 import React from 'react'
 import ExternalLinkIcon from '../components/ExternalLinkIcon'
 
@@ -11,7 +13,7 @@ const FooterSection = () => {
             <ExternalLinkIcon link="https://google.com" icon="fa-brands fa-google"/>
             <ExternalLinkIcon link="https://linkedin.com" icon="fa-brands fa-linkedin"/>
         </div>
-    <div>© 2022 Fixxo. All Rights Reserved</div>
+        <div>© 2022 Fixxo. All Rights Reserved</div>
     </footer>
   )
 }

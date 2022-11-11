@@ -1,3 +1,5 @@
+// Map section on contact page
+
 import React from 'react'
 
 const MapSection = () => {

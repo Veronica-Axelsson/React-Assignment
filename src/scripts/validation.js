@@ -1,3 +1,5 @@
+// Validation for contact form on contact page
+
 export const submitData = async (url, method, data, ContentType = 'application/json') => {
     
     const res = await fetch(url, {
@@ -12,10 +14,7 @@ export const submitData = async (url, method, data, ContentType = 'application/j
         return true
     
     return false   
-    
-    
 }
-
 
 export const validate = (e, form = null) => {
     if(e.type === 'submit') {

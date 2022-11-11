@@ -8,14 +8,11 @@
 @import "./cores/Buttons";
 @import "./cores/Utilities";
 
-
 //Sections
 @import "./sections/MainMenuSection"; 
 @import "./sections/ProductGridSection"; 
-@import "./sections/_ProductGridSection2"; 
+@import "./sections/ProductGridSection2"; 
 @import "./sections//FooterSection";
-@import "./views/ContactViews";
-@import "./views/ContactViews";
 @import "./components/Breadcrumbs";
 @import "./sections/MapSection";
 @import "./sections/ContactFormSection";
@@ -25,6 +22,5 @@
 @import "./sections/ProductSection1";
 @import "./sections/ProductSection2";
 
-
-//@Media
-// @import "./cores/@media\(min-width\)1600px";
+//Views
+@import "./views/NotFound";

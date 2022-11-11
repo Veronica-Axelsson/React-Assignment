@@ -2,15 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 846px;
-    margin-bottom: 60px;
+    max-height: 846px;
+    margin: 1rem 0 6rem 0;
+
 
     .img-left {
-        // margin-left: -120px;
-        // height: 846px;
+        margin-left: 1rem;
+
         margin-left: 0;
         display: none;
-        max-height: 700px;
+        max-height: 846px;
     }
 
     .img-right {
@@ -18,17 +19,17 @@
         // height: 846px;
         margin-right: 0;
         display: none;
-        max-height: 700px;
+        max-height: 846px;
     }
 
     .heroBody {
-        margin-top: 30px;
-        padding-bottom: 60px;
+        margin-right: 2rem;
+        padding-bottom: 6rem;
         text-align: center;
         display: block;
         justify-content: center;
         position: relative;
-        width: 100%;
+        min-width: 33%;
 
         h2 {
             margin-top: 5px;
