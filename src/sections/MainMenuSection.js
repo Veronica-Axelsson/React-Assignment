@@ -29,8 +29,8 @@ const MainMenuSection = () => {
         <div className="menuIcons">
             <MenuIcon link="/search" icon="fa-regular fa-magnifying-glass" />
             <MenuIcon hideOnMobile={true} link="/compare" icon="fa-regular fa-code-compare" />
-            <MenuIcon hideOnMobile={true} quantity="3" link="/wishlist" icon="fa-regular fa-heart" />
-            <MenuIcon quantity="4" link="/shoppingcart" icon="fa-regular fa-bag-shopping" />
+            <MenuIcon hideOnMobile={true} quantity="1" link="/wishlist" icon="fa-regular fa-heart" />
+            <MenuIcon quantity="3" link="/shoppingcart" icon="fa-regular fa-bag-shopping" />
 
         {/* Mobile toggle menu -------------------------------------------------------------------------------------------------------*/}
             <button onClick={toggleMenu} className="d-lg-none d-xl-none menuIcon btn-menuIcon"><i className="fa-regular fa-bars"></i></button>

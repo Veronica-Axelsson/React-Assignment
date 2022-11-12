@@ -2,7 +2,6 @@
 .contact-form {
     font-weight: $font-weight-regular;
     margin-bottom: 110px;
-    // width: 100%;
 
     .container{
         max-width: 1110px;
@@ -19,12 +18,10 @@
         grid-template-columns: 1fr;
         gap: 40px;
     
-
         input {
             height: 50px;
             width: 100%;
             padding: 18px 20px;
-  
             border: 1px solid rgba(112,112,112, 0.4);
         }
 
@@ -42,9 +39,7 @@
 
         .error {
             color: $color-theme;
-            border: 1px solid $color-theme;
-
-                  border: 1px solid blue !important;
+            border: 1px solid red !important;
             outline-color: red !important;
 
         }
@@ -52,10 +47,7 @@
         .errorMessage {
             margin-top: 5px;
             color: $color-theme;
-            font-size: 0.8;
-
-      
-            
+            font-size: 0.8;  
         }
 
         .button {

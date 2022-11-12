@@ -99,7 +99,6 @@
                 font-weight: $font-weight-semiBold;
             }
         }
-    
         
         &:hover {
             .card-menu {
@@ -109,15 +108,14 @@
             .btn-card-theme {
                 display: flex !important;
                 color: $color-white;
-                // justify-content: center;
             }
         }
     }
 }
 
-
 @media (min-width: 1200px) {
     .product-grid {
+        
         .container {
             max-width: 1110px;
         }

@@ -10,7 +10,7 @@ const hero = () => {
     <section className="hero container">
 
         {/* Left image --------------------------------------------------------------*/}
-        <img src={Hero1} alt="showcase-img-1"/>
+        <img src={Hero1} className="heroImg1" alt="showcase-img-1"/>
 
         {/* Middle Text and button --------------------------------------------------*/}
         <div className="heroBody ">
@@ -27,7 +27,7 @@ const hero = () => {
         </div>
         
         {/* Right image ---------------------------------------------------------------*/}
-        <img src={Hero2} alt="showcase-img-1"/>        
+        <img src={Hero2} className="heroImg2" alt="showcase-img-1"/>        
     </section>
   )
 }

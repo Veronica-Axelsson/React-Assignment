@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import './style.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-
 import HomeView from './views/HomeView';
 import CategoriesView from './views/CategoriesView';
 import ProductsView from './views/ProductsView';
@@ -46,7 +45,6 @@ function App() {
       <ProductContext.Provider value={products}>
       <FeaturedProductsContext.Provider value={featured}>
       <ProductSection1Context.Provider value={productSection1}>
-
         <Routes>
           <Route path="/" element={<HomeView />}/>
           <Route path="/categories" element={<CategoriesView/>}/>

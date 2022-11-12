@@ -18,7 +18,7 @@ const HomeView = () => {
 
   return (
     <>
-    <header>
+    <header className='headerBG'>
       <MainMenuSection/>
       <Hero/>
     </header>

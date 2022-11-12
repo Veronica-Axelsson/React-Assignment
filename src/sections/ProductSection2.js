@@ -13,10 +13,9 @@ const ProductSection2 = () => {
   return (
     <section className="productSection2">
       <div className="container">
-
-        {/* Desktop version ------------------------------*/}
         <div className="desktop">
           <div className="divide2">
+            
             {/* Left side - Products ---------------------------------------------------------*/}
             <div className='fullwidth'>
               <div className="colWidth">
@@ -40,35 +39,6 @@ const ProductSection2 = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-     
-        {/* Mobile version -------------------------------*/}
-        <div className="mobile">
-          {/* Above product text - Big image --------------------------------------------------------*/}
-          <div className="divide2">
-            <div className="textOnImg ">
-                <img className="imgSize" src={Models8} alt="" />
-                <div className="centering">
-                  <h2>2 FOR USD $49</h2>
-                  <div className="__button">
-                    <div className="button-white">
-                      <div className="corner-top-left"></div>
-                      <Link to="/products" className="button-text">FLASE SALE</Link>
-                      <div className="corner-bottom-right"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-            {/* Under image - Products text ---------------------------------------------------------*/}
-            <div className='fullwidth'>
-                <div className="colWidth">
-                  <div className="productsSize">
-                    <ProductGridSection2 items={products} />
-                  </div>
-                </div>
             </div>
           </div>
         </div>

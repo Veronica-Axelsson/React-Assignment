@@ -8,7 +8,7 @@ import { ProductSection1Context } from '../contexts/contexts'
 
 const ProductSection1 = () => {
 
-  const products = useContext(ProductSection1Context);
+const products = useContext(ProductSection1Context);
 
   return (
     <section className="productSection1">
@@ -27,7 +27,6 @@ const ProductSection1 = () => {
                 </div>
               </div>
             </div>
-
           </div>
 
           {/* Right side - Products --------------------------------------------------------*/}

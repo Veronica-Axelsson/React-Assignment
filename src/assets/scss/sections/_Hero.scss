@@ -15,8 +15,6 @@
     }
 
     .img-right {
-        // margin-right: -120px;
-        // height: 846px;
         margin-right: 0;
         display: none;
         max-height: 846px;
@@ -62,7 +60,6 @@
             align-items: center; 
             transition: 0.15s ease-in-out;
         
-
             &:hover {
                 background-color: $color-dark;
 
